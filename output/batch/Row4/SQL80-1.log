@@ -1,0 +1,1 @@
+18:41:05	SELECT id, created_at, created_user, updated_at, updated_user, deleted, display_template, memo, position, publish_country, template_type, title FROM offerwall_production.templates WHERE deleted = 0;	241 row(s) returned	0.032 sec

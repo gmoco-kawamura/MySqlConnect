@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Debug Dynamic Function",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main.py",
+            "args": ["${input:sql_type}"],
+            "console": "integratedTerminal",
+            "preLaunchTask": "Select The Type Of SQL query"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "sql_type",
+            "type": "pickString",
+            "description": "Select the type of SQL query to execute",
+            "options": ["batch", "backend"]
+        }
+    ]
+}
